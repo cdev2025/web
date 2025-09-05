@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3. Flex + Grid + 미디어쿼리</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<a class="brand" href="#">3. Flex + Grid + 미디어쿼리</a>
+			<ul class="menu">
+				<li><a href="#flex">Flex</a></li>
+				<li><a href="#grid">Grid</a></li>
+				<li><a href="#gallery">갤러리</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<main class="container">
+  		<section id="flex" style="padding: 22px 0">
+  			<h1>Flex + Grid + 미디어쿼리</h1>
+  			<p>Flex는 한 줄 정렬(메뉴/카드), Grid는 행·열 배치(갤러리)에 적합합니다. 
+  			미디어쿼리로 화면 크기에 따라 열 수와 정렬을 바꿔봅니다.</p>
+  			<div class="row">
+  				<article class="card"><h3>Flex</h3><p>가로나 세로 한 줄 정렬. 메뉴/버튼/카드 배치에 적합.</p></article>
+  				<article class="card"><h3>Grid</h3><p>2차원(행·열) 배치. 갤러리/대시보드에 적합.</p></article>
+  				<article class="card"><h3>MQ</h3><p>브레이크포인트에서 열 수/정렬을 조정.</p></article>
+  			</div>
+  		</section>
+  	</main>
+
+	<section id="gallery" class="gallery">
+		<div class="container">
+			<h2>갤러리 (Grid + MQ)</h2>
+			<div class="grid">
+				<img src="./images/01.jpg" alt="이미지 1" width="600" height="450">
+				<img src="./images/02.jpg" alt="이미지 2" width="600" height="450">
+				<img src="./images/03.jpg" alt="이미지 3" width="600" height="450">
+				<img src="./images/04.jpg" alt="이미지 4" width="600" height="450">
+				<img src="./images/05.jpg" alt="이미지 5" width="600" height="450">
+				<img src="./images/06.jpg" alt="이미지 6" width="600" height="450">
+				<img src="./images/07.jpg" alt="이미지 7" width="600" height="450">
+				<img src="./images/08.jpg" alt="이미지 8" width="600" height="450">
+			</div>
+		</div>
+	</section>
+</body>
+</html>
