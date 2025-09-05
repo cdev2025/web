@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root { --gap: 14px; }
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	font-family: system-ui, -apple-system, Roboto, 'Noto Sans KR', sans-serif;
+	line-height: 1.6;
+}
+
+.container {
+	width: min(1000px, 92%);
+	margin-inline: auto;
+}
+
+header {
+	background: #0f172a;
+	color: #e5e7eb;
+	padding: 12px 0;
+}
+h1{ margin: 0;}
+main{ padding: 24px 0 40px; }
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: var(--gap);
+}
+
+.box{
+	border: 1px solid #ececf5; border-radius: 12px; padding: 12px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(20, 24, 40, 0.4);
+	text-align: center
+}

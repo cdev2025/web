@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+:root { 
+	--gap: clamp(12px, 2.5vw, 20px);
+	--r : 12px;
+}
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	font-family: system-ui, -apple-system, Roboto, 'Noto Sans KR', sans-serif;
+	line-height: 1.6;
+	font-size: clamp(15px, 1.7vw, 18px); 
+}
+
+.container { width: min(1100px, 92%); margin-inline: auto;}
+
+header {  background: #0f172a; color: #e5e7eb; position: sticky; top:0; z-index:10; }
+.nav {
+	/*네비게이션을 가로 한 줄로 정렬*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--gap);
+	padding: 12px 0;
+}
+.brand { font-weight: 800; color: #e5e7eb; text-decoration: none;}
+.menu { display: flex; gap: 10px; list-style:none; margin: 0; padding: 0;}
+.menu a {color: #e5e7eb; text-decoration: none; padding: 8px 10px; border-radius: 8px;}
+.menu a:hover { background: rgba(255,255,255, 0.5); }
+
+.row {
+	display: flex;
+	gap: var(--gap);
+	flex-wrap: wrap; /*화면이 좁아지면 자동 줄바꿈*/
+}
+.card {
+	flex: 1 1 220px; /* 최소 220px, 남는 공간 자동 배분*/
+	border: 1px solid #ececf5; border-radius: var(--r);
+	padding: 14px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(20,24, 40, 0.4);
+}
+
+.gallery { backgound: #f7f8fc; padding: clamp(24px, 6vw, 56px) 0; }
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); gap: var(--gap);
+}
+.grid img{ border-radius: 10px;}
+
+@media (max-width: 640px){
+	/*모바일: 네비는 세로 정렬*/
+	.nav{ flex-direction: column; align-items: stretch;}
+	.menu{ flex-wrap: wrap; justify-content: center;}
+}
+@media (min-width: 768px){
+	/* 태블릿 + : 갤러리 3열 */
+	.grid { grid-template-columns: repeat(3, 1fr);}
+}
+@media (min-width: 1024px) {
+	/* pc 이상 : 갤러리 4열*/
+	.grid { grid-template-columns: repeat(4, 1fr);}
+}
+
+
+
