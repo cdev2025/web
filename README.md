@@ -19,3 +19,7 @@
 * index.html : Flex + Grid + 미디어 쿼리 
 * css/*.css : css 실습 파일
 * images/*.jpg : index.html에서 사용되는 이미지 파일들
+
+### hello-java : 리마인드 복습
+*  index.html : 버튼을 클릭하면 alert()창이 뜨도록 함!
+* css/style.css

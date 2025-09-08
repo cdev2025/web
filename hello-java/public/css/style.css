@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: sans-serif;
+	background: linear-gradient(120deg, #3b82f6, #9333ea);
+	color: white;
+}
+
+.card {
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	padding: 20px 30px;
+	border-radius: 16px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+button {
+	margin-top: 12px;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 8px;
+	background: #facc15;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover { background: #fbbf24; }
